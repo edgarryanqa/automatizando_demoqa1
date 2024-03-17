@@ -69,8 +69,6 @@ public class Metodos extends DriversFactory {
 		alert.sendKeys(nome);
 		
 	}
-	public static void riscar() {
-		
-	}
+	
 	
 }
