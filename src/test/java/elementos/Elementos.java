@@ -3,7 +3,7 @@ package elementos;
 import org.openqa.selenium.By;
 
 /**
- * Class responsavel por armazenar elementos web
+ * Class responsável por armazenar elementos web
  * 
  * @param elemento
  * @author Edgar Ryan

@@ -3,7 +3,7 @@ package drivers;
 import org.openqa.selenium.WebDriver;
 
 /**
- * Class responsável por criar um atributos do WebDriver 
+ * Class responsável por criar um atributo do WebDriver 
  * para utilizarmos em nossa automação
  * 
  * @param Metodos
