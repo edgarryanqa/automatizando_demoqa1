@@ -15,7 +15,7 @@ import drivers.DriversFactory;
 
 
 /**
- * Class responsável por estrurar os metodos que serão utilizados
+ * Class responsável por estruturar os métodos que serão utilizados
  * 
  * @param Metodos
  * @author Edgar Ryan
