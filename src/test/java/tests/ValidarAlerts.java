@@ -24,13 +24,16 @@ import pages.AlertsPage;
 
 public class ValidarAlerts extends Navegadores{
 	
+	//insira seu nome nessa variável para realizar o teste numero 4
+	String seuNome = "Edgar";
 	
 	//Mensagens exibidas após cada click
 	
 	String msg1 = "You clicked a button";
 	String msg2 = "This alert appeared after 5 seconds";
 	String msg3 = "You selected Ok";
-	String msg4 = "You entered Edgar";
+	String msg4 = "You entered " + seuNome;
+	
 	
 	@BeforeEach
 	public void setup () {
@@ -45,20 +48,20 @@ public class ValidarAlerts extends Navegadores{
 	}
 	
 	
-	@Test
+	//@Test
 	public void validarClick1() {
 		AlertsPage.click1(msg1);
 		
 
 	}
-	@Test
+	//@Test
 	public void validarClick2() throws InterruptedException  {
 		AlertsPage.click2(msg2);
 	
 
 
 	}
-	@Test
+	//@Test
 	public void validarClick3()  {
 		AlertsPage.click3(msg3);
 		
@@ -68,7 +71,7 @@ public class ValidarAlerts extends Navegadores{
 	}
 	@Test
 	public void validarClick4()  {
-		AlertsPage.click4("Edgar",msg4);
+		AlertsPage.click4(seuNome,msg4);
 		
 		
 		
