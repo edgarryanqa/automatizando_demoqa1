@@ -4,7 +4,7 @@ package pages;
 
 import org.openqa.selenium.By;
 
-
+import elementos.Elementos;
 
 /**
  * Class responsável por estrurar as ações  utilizadas na Page Alerts
@@ -15,25 +15,46 @@ import org.openqa.selenium.By;
 
 import metodos.Metodos;
 
-public class AlertsPage {
+public class AlertsPage extends  Elementos{
 	
 	
-	
-	
-		public static void escolherCard(String card) {
-			Metodos.clicarPorTexto("h5",card );
-			
-			
+		public static void acessarAlerts() {
+			Metodos.clicarPorTexto("h5","Alerts, Frame & Windows" );
+			Metodos.clicar(alerts);
+						
 		}
 		
-		public static void escolherAba(By elemento) {
-			Metodos.clicar(elemento);
+	
+		public static void click1(String msgEsperada) {
+			Metodos.clicar(click1);
+			Metodos.validarMsgAlert(msgEsperada);
+			Metodos.clicarAlert();
+			
 			
 		}
-		public static void escolherBotao(By elemento) {
-			Metodos.clicar(elemento);
+		public static void click2(String msgEsperada) throws InterruptedException {
+			Metodos.clicar(click2);
+			Metodos.pausa();
+			Metodos.validarMsgAlert(msgEsperada);
+			Metodos.clicarAlert();
+		}
+		public static void click3(String msgEsperada) {
+			Metodos.clicar(click3);
+			Metodos.clicarAlert();
+			Metodos.validarTexto(msgBt3, msgEsperada);
 			
 		}
+		public static void click4(String nome, String msgesperada) {
+			Metodos.clicar(click4);
+			Metodos.escreverNoAlert(nome);
+			Metodos.clicarAlert();
+			Metodos.validarTexto(msgbt4, msgesperada);
+			
+		}
+		public static void clickAlert() {
+			Metodos.clicarAlert();
+		}
+		
 		
 		public static void validarTexto(By elemento,String textoEsperado) {
 			Metodos.validarTexto(elemento, textoEsperado);

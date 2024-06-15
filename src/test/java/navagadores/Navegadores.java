@@ -4,6 +4,7 @@ package navagadores;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import drivers.DriversFactory;
+import pages.AlertsPage;
 
 
 /**
@@ -20,6 +21,7 @@ public class Navegadores  extends DriversFactory{
 		driver = new ChromeDriver();
 		driver.get("https://demoqa.com");
 		driver.manage().window().maximize();
+		AlertsPage.acessarAlerts();	
 		
 		
 		
